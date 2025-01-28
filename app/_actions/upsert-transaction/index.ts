@@ -8,7 +8,8 @@ import {
   TransactionType,
 } from "@prisma/client";
 
-interface addTransactionParams {
+interface upsertTransactionParams {
+  id?: string;
   name: string;
   amount: number;
   type: TransactionType;
@@ -17,7 +18,7 @@ interface addTransactionParams {
   date: Date;
 }
 
-export const addTransaction = async (params: addTransactionParams) => {
+export const upsertTransaction = async (params: upsertTransactionParams) => {
   const { userId } = await auth();
   if (!userId) {
     throw new Error("Unauthorized");
