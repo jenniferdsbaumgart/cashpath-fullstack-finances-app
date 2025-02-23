@@ -7,6 +7,7 @@ import {
   TransactionPaymentMethod,
   TransactionType,
 } from "@prisma/client";
+import { upsertTransactionSchema } from "./schema";
 
 interface upsertTransactionParams {
   id?: string;
@@ -19,11 +20,16 @@ interface upsertTransactionParams {
 }
 
 export const upsertTransaction = async (params: upsertTransactionParams) => {
+  upsertTransactionSchema.parse(params);
   const { userId } = await auth();
   if (!userId) {
     throw new Error("Unauthorized");
   }
-  await db.transaction.create({
-    data: { ...params, userId },
+  await db.transaction.upsert({
+    update: { ...params, userId },
+    create: { ...params, userId },
+    where: {
+      id: params?.id ?? "",
+    },
   });
 };
