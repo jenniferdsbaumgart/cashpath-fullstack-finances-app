@@ -12,7 +12,7 @@ const Navbar = () => {
       {/* LEFT */}
       <div className="flex items-center gap-10">
         <Image
-          src="../../public/logo.svg"
+          src="../../public/cashpath_full_logo.png"
           width={133}
           height={39}
           alt={"logo"}
