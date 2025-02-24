@@ -2,11 +2,7 @@
 
 **CashPath** é uma aplicação web elegante e minimalista desenvolvida para ajudar você a gerenciar suas finanças com eficiência e clareza. Com uma interface moderna e intuitiva, CashPath oferece ferramentas para rastreamento financeiro, planejamento e visualização de gastos.
 
----
-
 # Status: Em desenvolvimento 🚧 
-
----
 
 ## Tecnologias Utilizadas
 
@@ -22,16 +18,12 @@
 - [React Hook Form](https://react-hook-form.com/) – Manipulação eficiente de formulários  
 - [Recharts](https://recharts.org/) – Visualização de dados em gráficos  
 
----
-
 ## Próximos Passos
 
 - [ ] Implementar dashboard interativo com gráficos e tabelas.
 - [ ] Integração com chatGPT
 - [ ] Adicionar planos de assinatura    
 - [ ] 🌐 Deploy e documentação completa da API.  
-
----
 
 ## Conclusão
 
