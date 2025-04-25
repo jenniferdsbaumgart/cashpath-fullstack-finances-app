@@ -1,6 +1,6 @@
-# CashPath - Finances Application
+# Monevo- Finances Application
 
-**CashPath** é uma aplicação web elegante e minimalista desenvolvida para ajudar você a gerenciar suas finanças com eficiência e clareza. Com uma interface moderna e intuitiva, CashPath oferece ferramentas para rastreamento financeiro, planejamento e visualização de gastos.
+**Mnevo** é uma aplicação web elegante e minimalista desenvolvida para ajudar você a gerenciar suas finanças com eficiência e clareza. Com uma interface moderna e intuitiva, CashPath oferece ferramentas para rastreamento financeiro, planejamento e visualização de gastos.
 
 # Status: Em desenvolvimento 🚧 
 
@@ -27,6 +27,6 @@
 
 ## Conclusão
 
-O **CashPath** ainda está em construção e, assim como o projeto, estou em constante aprendizado.   
+O **Monevo** ainda está em construção e, assim como o projeto, estou em constante aprendizado.   
 Cada linha de código escrita é um aprendizado novo, e estou animada para ver até onde esse projeto pode chegar.  
 
