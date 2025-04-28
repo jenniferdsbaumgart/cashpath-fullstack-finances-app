@@ -1,6 +1,6 @@
-# Monevo- Finances Application
+# Monicount- Finances Application
 
-**Mnevo** é uma aplicação web elegante e minimalista desenvolvida para ajudar você a gerenciar suas finanças com eficiência e clareza. Com uma interface moderna e intuitiva, CashPath oferece ferramentas para rastreamento financeiro, planejamento e visualização de gastos.
+**Monicount** é uma aplicação web elegante e minimalista desenvolvida para ajudar você a gerenciar suas finanças com eficiência e clareza. Com uma interface moderna e intuitiva, CashPath oferece ferramentas para rastreamento financeiro, planejamento e visualização de gastos.
 
 # Status: Em desenvolvimento 🚧 
 
@@ -27,6 +27,6 @@
 
 ## Conclusão
 
-O **Monevo** ainda está em construção e, assim como o projeto, estou em constante aprendizado.   
+O **Monicount** ainda está em construção e, assim como o projeto, estou em constante aprendizado.   
 Cada linha de código escrita é um aprendizado novo, e estou animada para ver até onde esse projeto pode chegar.  
 
