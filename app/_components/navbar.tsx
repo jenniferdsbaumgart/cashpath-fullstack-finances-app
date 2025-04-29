@@ -12,7 +12,7 @@ const Navbar = () => {
       {/* LEFT */}
       <div className="flex items-center gap-10">
         <Image
-          src="../../public/cashpath_full_logo.png"
+          src="../../public/monicount-logo.png"
           width={133}
           height={39}
           alt={"logo"}
@@ -35,7 +35,7 @@ const Navbar = () => {
               : "text-muted-foreground"
           }
         >
-          Transações
+          Transactions
         </Link>
         <Link
           href="/subscription"
@@ -45,7 +45,7 @@ const Navbar = () => {
               : "text-muted-foreground"
           }
         >
-          Assinatura
+          Subscriptions
         </Link>
       </div>
       {/* RIGHT */}
