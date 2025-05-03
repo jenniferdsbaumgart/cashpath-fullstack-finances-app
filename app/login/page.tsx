@@ -15,7 +15,7 @@ const LoginPage = async () => {
       {/* LEFT */}
       <div className="mx-auto flex h-full max-w-[550px] flex-col justify-center p-8">
         <Image
-          src="../../public/cashpath_full_logo.png"
+          src="/monicount-logo.png"
           width={173}
           height={39}
           alt={"logo"}
@@ -23,7 +23,7 @@ const LoginPage = async () => {
         />
         <h1 className="mb-3 text-4xl font-bold">Bem-vindo</h1>
         <p className="mb-8 text-muted-foreground">
-          A CashPath é uma plataforma de gestão financeira para que você possa
+          A Monicount é uma plataforma de gestão financeira para que você possa
           monitorar suas movimentações, e receber insights personalizados,
           facilitando o controle do seu orçamento.
         </p>
@@ -38,7 +38,7 @@ const LoginPage = async () => {
       {/* RIGHT */}
       <div className="relative h-full w-full">
         <Image
-          src="../../public/cashpath-login-image.png"
+          src="/monicount-logo.png"
           alt={"faça login"}
           fill
           className="object-cover"

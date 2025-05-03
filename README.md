@@ -1,6 +1,6 @@
 # Monicount- Finances Application
 
-**Monicount** é uma aplicação web elegante e minimalista desenvolvida para ajudar você a gerenciar suas finanças com eficiência e clareza. Com uma interface moderna e intuitiva, CashPath oferece ferramentas para rastreamento financeiro, planejamento e visualização de gastos.
+**Monicount** é uma aplicação web elegante e minimalista desenvolvida para ajudar você a gerenciar suas finanças com eficiência e clareza. Com uma interface moderna e intuitiva, Monicount oferece ferramentas para rastreamento financeiro, planejamento e visualização de gastos.
 
 # Status: Em desenvolvimento 🚧 
 

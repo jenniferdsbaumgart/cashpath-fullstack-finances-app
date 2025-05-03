@@ -31,12 +31,8 @@ const AddTransactionButton = ({
               disabled={!userCanAddTransaction}
             >
               Adicionar transação
-              <ArrowDownUpIcon />
+              <ArrowDownUpIcon className="ml-2 h-4 w-4" />
             </Button>
-            <UpsertTransactionDialog
-              isOpen={dialogIsOpen}
-              setIsOpen={setDialogIsOpen}
-            />
           </TooltipTrigger>
           <TooltipContent>
             {!userCanAddTransaction &&
@@ -44,6 +40,11 @@ const AddTransactionButton = ({
           </TooltipContent>
         </Tooltip>
       </TooltipProvider>
+
+      <UpsertTransactionDialog
+        isOpen={dialogIsOpen}
+        setIsOpen={setDialogIsOpen}
+      />
     </>
   );
 };
