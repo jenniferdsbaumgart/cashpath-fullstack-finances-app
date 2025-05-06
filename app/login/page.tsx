@@ -38,7 +38,7 @@ const LoginPage = async () => {
       {/* RIGHT */}
       <div className="relative h-full w-full">
         <Image
-          src="/monicount-logo.png"
+          src="/monicount-login-image.png"
           alt={"faça login"}
           fill
           className="object-cover"
