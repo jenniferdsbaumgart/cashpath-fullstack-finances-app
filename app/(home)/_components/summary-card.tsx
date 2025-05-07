@@ -31,9 +31,9 @@ const SummaryCard = ({
         <p
           className={`font-bold ${size === "small" ? "text-2xl" : "text-4xl"}`}
         >
-          {Intl.NumberFormat("pt-BR", {
+          {Intl.NumberFormat("en-US", {
             style: "currency",
-            currency: "BRL",
+            currency: "USD",
           }).format(amount)}
         </p>
 

@@ -15,39 +15,39 @@ export const TRANSACTION_PAYMENT_METHOD_ICONS = {
 };
 
 export const TRANSACTION_CATEGORY_LABELS = {
-  EDUCATION: "Educação",
-  ENTERTAINMENT: "Entretenimento",
-  FOOD: "Alimentação",
-  HEALTH: "Saúde",
-  HOUSING: "Moradia",
-  OTHER: "Outros",
-  SALARY: "Salário",
-  TRANSPORTATION: "Transporte",
-  UTILITY: "Utilidades",
+  EDUCATION: "Education",
+  ENTERTAINMENT: "Entertainment",
+  FOOD: "Food",
+  HEALTH: "Health",
+  HOUSING: "Housing",
+  OTHER: "Other",
+  SALARY: "Salary",
+  TRANSPORTATION: "Transportation",
+  UTILITY: "Utilities",
 };
 
 export const TRANSACTION_PAYMENT_METHOD_LABELS = {
-  BANK_TRANSFER: "Transferência Bancária",
-  BANK_SLIP: "Boleto Bancário",
-  CASH: "Dinheiro",
-  CREDIT_CARD: "Cartão de Crédito",
-  DEBIT_CARD: "Cartão de Débito",
-  OTHER: "Outros",
+  BANK_TRANSFER: "Bank Transfer",
+  BANK_SLIP: "Bank Slip",
+  CASH: "Cash",
+  CREDIT_CARD: "Credit Card",
+  DEBIT_CARD: "Debit Card",
+  OTHER: "Others",
   PIX: "Pix",
 };
 
 export const TRANSACTION_TYPE_OPTIONS = [
   {
     value: TransactionType.EXPENSE,
-    label: "Despesa",
+    label: "Expense",
   },
   {
     value: TransactionType.DEPOSIT,
-    label: "Depósito",
+    label: "Deposit",
   },
   {
     value: TransactionType.INVESTMENT,
-    label: "Investimento",
+    label: "Investment",
   },
 ];
 

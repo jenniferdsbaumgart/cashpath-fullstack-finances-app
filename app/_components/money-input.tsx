@@ -1,6 +1,8 @@
 import React, { forwardRef } from "react";
 import { NumericFormat, NumericFormatProps } from "react-number-format";
+
 import { Input, InputProps } from "@/app/_components/ui/input";
+
 export const MoneyInput = forwardRef(
   (
     props: NumericFormatProps<InputProps>,
@@ -11,7 +13,7 @@ export const MoneyInput = forwardRef(
         {...props}
         thousandSeparator="."
         decimalSeparator=","
-        prefix="R$ "
+        prefix="$ "
         allowNegative={false}
         customInput={Input}
         getInputRef={ref}
@@ -19,4 +21,5 @@ export const MoneyInput = forwardRef(
     );
   },
 );
+
 MoneyInput.displayName = "MoneyInput";

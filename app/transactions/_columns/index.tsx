@@ -14,32 +14,32 @@ import EditTransactionButton from "../_components/edit-transaction-button";
 export const transactionColumns: ColumnDef<Transaction>[] = [
   {
     accessorKey: "name",
-    header: "Nome",
+    header: "Name",
   },
   {
     accessorKey: "type",
-    header: "Tipo",
+    header: "Type",
     cell: ({ row: { original: transaction } }) => (
       <TransactionTypeBadge transaction={transaction} />
     ),
   },
   {
     accessorKey: "category",
-    header: "Categoria",
+    header: "Category",
     cell: ({ row: { original: transaction } }) =>
       TRANSACTION_CATEGORY_LABELS[transaction.category],
   },
   {
     accessorKey: "paymentMethod",
-    header: "Método de Pagamento",
+    header: "Payment Method",
     cell: ({ row: { original: transaction } }) =>
       TRANSACTION_PAYMENT_METHOD_LABELS[transaction.paymentMethod],
   },
   {
     accessorKey: "date",
-    header: "Data",
+    header: "Date",
     cell: ({ row: { original: transaction } }) =>
-      new Date(transaction.date).toLocaleDateString("pt-BR", {
+      new Date(transaction.date).toLocaleDateString("en-us", {
         day: "2-digit",
         month: "long",
         year: "numeric",
@@ -47,16 +47,16 @@ export const transactionColumns: ColumnDef<Transaction>[] = [
   },
   {
     accessorKey: "amount",
-    header: "Valor",
+    header: "Amount",
     cell: ({ row: { original: transaction } }) =>
-      new Intl.NumberFormat("pt-BR", {
+      new Intl.NumberFormat("en-US", {
         style: "currency",
-        currency: "BRL",
+        currency: "USD",
       }).format(Number(transaction.amount)),
   },
   {
     accessorKey: "actions",
-    header: "Ações",
+    header: "Actions",
     cell: ({ row: { original: transaction } }) => {
       return (
         <div className="space-x-1">

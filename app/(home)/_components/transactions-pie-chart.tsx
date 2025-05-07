@@ -10,14 +10,14 @@ import {
   ChartTooltipContent,
 } from "@/app/_components/ui/chart";
 import { TransactionType } from "@prisma/client";
-import { TransactionPercentagePerType } from "../../_data/get-dashboard/types";
+import { TransactionPercentagePerType } from "@/app/_data/get-dashboard/types";
 import { PiggyBankIcon, TrendingDownIcon, TrendingUpIcon } from "lucide-react";
 import PercentageItem from "./percentage-item";
 
 const chartConfig = {
   [TransactionType.INVESTMENT]: {
-    label: "Investiment",
-    color: "#FFFFFF",
+    label: "Investments",
+    color: "#CE8D00",
   },
   [TransactionType.DEPOSIT]: {
     label: "Deposits",
@@ -46,17 +46,17 @@ const TransactionsPieChart = ({
     {
       type: TransactionType.DEPOSIT,
       amount: depositsTotal,
-      fill: "#55B02E",
+      fill: "#03826F",
     },
     {
       type: TransactionType.EXPENSE,
       amount: expensesTotal,
-      fill: "#E93030",
+      fill: "#BE1A1A",
     },
     {
       type: TransactionType.INVESTMENT,
       amount: investmentsTotal,
-      fill: "#FFFFFF",
+      fill: "#CE8D00",
     },
   ];
   return (
@@ -82,18 +82,18 @@ const TransactionsPieChart = ({
 
         <div className="space-y-3">
           <PercentageItem
-            icon={<TrendingUpIcon size={16} className="text-primary" />}
-            title="Receita"
+            icon={<TrendingUpIcon size={16} className="text-teal-500" />}
+            title="Deposits"
             value={typesPercentage[TransactionType.DEPOSIT]}
           />
           <PercentageItem
-            icon={<TrendingDownIcon size={16} className="text-red-500" />}
-            title="Despesas"
+            icon={<TrendingDownIcon size={16} className="text-red-600" />}
+            title="Expenses"
             value={typesPercentage[TransactionType.EXPENSE]}
           />
           <PercentageItem
-            icon={<PiggyBankIcon size={16} />}
-            title="Investido"
+            icon={<PiggyBankIcon size={16} className="text-amber-500" />}
+            title="Investments"
             value={typesPercentage[TransactionType.INVESTMENT]}
           />
         </div>

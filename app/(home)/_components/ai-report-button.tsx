@@ -1,20 +1,22 @@
 "use client";
 
 import { Button } from "@/app/_components/ui/button";
-import { DialogFooter, DialogHeader } from "@/app/_components/ui/dialog";
 import {
   Dialog,
   DialogClose,
   DialogContent,
   DialogDescription,
+  DialogFooter,
+  DialogHeader,
   DialogTitle,
   DialogTrigger,
-} from "@radix-ui/react-dialog";
-import { BotIcon, Link, Loader2Icon } from "lucide-react";
-import React, { useState } from "react";
+} from "@/app/_components/ui/dialog";
+import { BotIcon, Loader2Icon } from "lucide-react";
 import { generateAiReport } from "../_actions/generate-ai-report";
+import { useState } from "react";
 import { ScrollArea } from "@/app/_components/ui/scroll-area";
 import Markdown from "react-markdown";
+import Link from "next/link";
 
 interface AiReportButtonProps {
   hasPremiumPlan: boolean;
@@ -24,11 +26,11 @@ interface AiReportButtonProps {
 const AiReportButton = ({ month, hasPremiumPlan }: AiReportButtonProps) => {
   const [report, setReport] = useState<string | null>(null);
   const [reportIsLoading, setReportIsLoading] = useState(false);
-
   const handleGenerateReportClick = async () => {
     try {
       setReportIsLoading(true);
       const aiReport = await generateAiReport({ month });
+      console.log({ aiReport });
       setReport(aiReport);
     } catch (error) {
       console.error(error);
@@ -36,12 +38,17 @@ const AiReportButton = ({ month, hasPremiumPlan }: AiReportButtonProps) => {
       setReportIsLoading(false);
     }
   };
-
   return (
-    <Dialog>
+    <Dialog
+      onOpenChange={(open) => {
+        if (!open) {
+          setReport(null);
+        }
+      }}
+    >
       <DialogTrigger asChild>
-        <Button variant="ghost">
-          AI Report
+        <Button variant="ghost" className="border-2">
+          Relatório IA
           <BotIcon />
         </Button>
       </DialogTrigger>
@@ -51,7 +58,8 @@ const AiReportButton = ({ month, hasPremiumPlan }: AiReportButtonProps) => {
             <DialogHeader>
               <DialogTitle>AI Report</DialogTitle>
               <DialogDescription>
-                Use AI to generate a report of your transactions with insights.
+                Use artificial intelligence to generate a report with insights
+                about your finances.
               </DialogDescription>
             </DialogHeader>
             <ScrollArea className="prose max-h-[450px] text-white prose-h3:text-white prose-h4:text-white prose-strong:text-white">
@@ -75,8 +83,7 @@ const AiReportButton = ({ month, hasPremiumPlan }: AiReportButtonProps) => {
             <DialogHeader>
               <DialogTitle>AI Report</DialogTitle>
               <DialogDescription>
-                You need a premium plan to use this feature. Please upgrade your
-                plan to access AI reports.
+                You need a premium plan to generate AI reports.
               </DialogDescription>
             </DialogHeader>
             <DialogFooter>
@@ -84,7 +91,7 @@ const AiReportButton = ({ month, hasPremiumPlan }: AiReportButtonProps) => {
                 <Button variant="ghost">Cancel</Button>
               </DialogClose>
               <Button asChild>
-                <Link href="/subscriptions">Upgrade to Premium</Link>
+                <Link href="/subscription">Subscribe to premium plan</Link>
               </Button>
             </DialogFooter>
           </>

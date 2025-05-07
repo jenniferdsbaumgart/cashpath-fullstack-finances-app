@@ -21,16 +21,16 @@ const LoginPage = async () => {
           alt={"logo"}
           className="mb-8"
         />
-        <h1 className="mb-3 text-4xl font-bold">Bem-vindo</h1>
+        <h1 className="mb-3 text-4xl font-bold">Welcome!</h1>
         <p className="mb-8 text-muted-foreground">
-          A Monicount é uma plataforma de gestão financeira para que você possa
-          monitorar suas movimentações, e receber insights personalizados,
-          facilitando o controle do seu orçamento.
+          Monicount is a financial management platform that allows you to
+          monitor your transactions and receive personalized insights, making it
+          easier to control your budget.
         </p>
         <SignInButton>
-          <Button variant="outline">
+          <Button variant="default">
             <LogInIcon className="mr-2" />
-            Fazer login ou criar conta
+            Login or Create Account
           </Button>
         </SignInButton>
       </div>
@@ -38,7 +38,7 @@ const LoginPage = async () => {
       {/* RIGHT */}
       <div className="relative h-full w-full">
         <Image
-          src="/monicount-login-image.png"
+          src="/monicount-login.svg"
           alt={"faça login"}
           fill
           className="object-cover"

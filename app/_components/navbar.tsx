@@ -11,12 +11,17 @@ const Navbar = () => {
     <nav className="flex justify-between border-b border-solid px-8 py-4">
       {/* LEFT */}
       <div className="flex items-center gap-10">
-        <Image src="/monicount-logo.png" width={133} height={39} alt={"logo"} />
+        <Image
+          src="/monicount-logo.png"
+          width={173}
+          height={39}
+          alt="Monicount"
+        />
         <Link
           href="/"
           className={
             pathname === "/"
-              ? "font-bold text-primary"
+              ? "font-bold text-teal-500"
               : "text-muted-foreground"
           }
         >
@@ -26,7 +31,7 @@ const Navbar = () => {
           href="/transactions"
           className={
             pathname === "/transactions"
-              ? "font-bold text-primary"
+              ? "font-bold text-teal-500"
               : "text-muted-foreground"
           }
         >
@@ -36,7 +41,7 @@ const Navbar = () => {
           href="/subscription"
           className={
             pathname === "/subscription"
-              ? "font-bold text-primary"
+              ? "font-bold text-teal-500"
               : "text-muted-foreground"
           }
         >

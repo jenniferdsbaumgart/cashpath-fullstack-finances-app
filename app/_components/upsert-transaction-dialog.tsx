@@ -26,11 +26,7 @@ import {
   SelectTrigger,
   SelectValue,
 } from "./ui/select";
-import {
-  TRANSACTION_CATEGORY_OPTIONS,
-  TRANSACTION_PAYMENT_METHOD_OPTIONS,
-  TRANSACTION_TYPE_OPTIONS,
-} from "../_components/_constants/transactions";
+
 import { DatePicker } from "./ui/date-picker";
 import { z } from "zod";
 import {
@@ -41,6 +37,11 @@ import {
 import { useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { upsertTransaction } from "../_actions/upsert-transaction";
+import {
+  TRANSACTION_CATEGORY_OPTIONS,
+  TRANSACTION_PAYMENT_METHOD_OPTIONS,
+  TRANSACTION_TYPE_OPTIONS,
+} from "./_constants/transactions";
 
 interface UpsertTransactionDialogProps {
   isOpen: boolean;

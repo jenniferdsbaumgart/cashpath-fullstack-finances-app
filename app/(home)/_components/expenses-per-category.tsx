@@ -1,7 +1,7 @@
+import { TRANSACTION_CATEGORY_LABELS } from "@/app/_components/_constants/transactions";
 import { CardContent, CardHeader, CardTitle } from "@/app/_components/ui/card";
 import { Progress } from "@/app/_components/ui/progress";
 import { ScrollArea } from "@/app/_components/ui/scroll-area";
-import { TRANSACTION_CATEGORY_LABELS } from "../../_components/_constants/transactions";
 import { TotalExpensePerCategory } from "@/app/_data/get-dashboard/types";
 
 interface ExpensesPerCategoryProps {

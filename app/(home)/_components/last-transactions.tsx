@@ -1,7 +1,7 @@
+import { TRANSACTION_PAYMENT_METHOD_ICONS } from "@/app/_components/_constants/transactions";
 import { Button } from "@/app/_components/ui/button";
 import { CardContent, CardHeader, CardTitle } from "@/app/_components/ui/card";
 import { ScrollArea } from "@/app/_components/ui/scroll-area";
-import { TRANSACTION_PAYMENT_METHOD_ICONS } from "../../_components/_constants/transactions";
 import { formatCurrency } from "@/app/_utils/currency";
 import { Transaction, TransactionType } from "@prisma/client";
 import Image from "next/image";
@@ -14,12 +14,12 @@ interface LastTransactionsProps {
 const LastTransactions = ({ lastTransactions }: LastTransactionsProps) => {
   const getAmountColor = (transaction: Transaction) => {
     if (transaction.type === TransactionType.EXPENSE) {
-      return "text-red-500";
+      return "text-red-600";
     }
     if (transaction.type === TransactionType.DEPOSIT) {
-      return "text-primary";
+      return "text-teal-500";
     }
-    return "text-white";
+    return "text-amber-500";
   };
   const getAmountPrefix = (transaction: Transaction) => {
     if (transaction.type === TransactionType.DEPOSIT) {
@@ -32,7 +32,7 @@ const LastTransactions = ({ lastTransactions }: LastTransactionsProps) => {
       <CardHeader className="flex-row items-center justify-between">
         <CardTitle className="font-bold">Last Transactions</CardTitle>
         <Button variant="outline" className="rounded-full font-bold" asChild>
-          <Link href="/transactions">See more</Link>
+          <Link href="/transactions">See More</Link>
         </Button>
       </CardHeader>
       <CardContent className="space-y-6">
@@ -53,7 +53,7 @@ const LastTransactions = ({ lastTransactions }: LastTransactionsProps) => {
               <div>
                 <p className="text-sm font-bold">{transaction.name}</p>
                 <p className="text-sm text-muted-foreground">
-                  {new Date(transaction.date).toLocaleDateString("pt-BR", {
+                  {new Date(transaction.date).toLocaleDateString("en-us", {
                     day: "2-digit",
                     month: "short",
                     year: "numeric",

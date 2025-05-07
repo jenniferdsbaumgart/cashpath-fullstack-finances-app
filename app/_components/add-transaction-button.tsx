@@ -5,9 +5,9 @@ import { Button } from "./ui/button";
 import { useState } from "react";
 import UpsertTransactionDialog from "./upsert-transaction-dialog";
 import {
-  TooltipProvider,
   Tooltip,
   TooltipContent,
+  TooltipProvider,
   TooltipTrigger,
 } from "./ui/tooltip";
 
@@ -30,17 +30,16 @@ const AddTransactionButton = ({
               onClick={() => setDialogIsOpen(true)}
               disabled={!userCanAddTransaction}
             >
-              Adicionar transação
-              <ArrowDownUpIcon className="ml-2 h-4 w-4" />
+              Add Transaction
+              <ArrowDownUpIcon />
             </Button>
           </TooltipTrigger>
           <TooltipContent>
             {!userCanAddTransaction &&
-              "You have reached the limit of transactions for this month. Please upgrade to a premium plan."}
+              "You have reached the transaction limit. Upgrade your plan to create unlimited transactions."}
           </TooltipContent>
         </Tooltip>
       </TooltipProvider>
-
       <UpsertTransactionDialog
         isOpen={dialogIsOpen}
         setIsOpen={setDialogIsOpen}
