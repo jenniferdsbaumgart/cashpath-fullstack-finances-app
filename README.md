@@ -1,6 +1,5 @@
-# Monicount- Finances Application
-
-**Monicount** é uma aplicação web elegante e minimalista desenvolvida para ajudar você a gerenciar suas finanças com eficiência e clareza. Com uma interface moderna e intuitiva, Monicount oferece ferramentas para rastreamento financeiro, planejamento e visualização de gastos.
+# Monicount - Finances Application
+**Monicount** é uma aplicação web elegante e minimalista desenvolvida para ajudar você a gerenciar suas finanças com eficiência e clareza. Com uma interface moderna e intuitiva, Monicount oferece ferramentas para rastreamento financeiro, planejamento e visualização de gastos. Incluindo Relatórios gerados por IA com insights sobre suas finanças, no modo de assinatura Premium.
 
 # Status: Em desenvolvimento 🚧 
 
@@ -20,9 +19,9 @@
 
 ## Próximos Passos
 
-- [ ] Implementar dashboard interativo com gráficos e tabelas.
-- [ ] Integração com chatGPT
-- [ ] Adicionar planos de assinatura    
+- [x] Implementar dashboard interativo com gráficos e tabelas.
+- [x] Integração com chatGPT
+- [x] Adicionar planos de assinatura    
 - [ ] 🌐 Deploy e documentação completa da API.  
 
 ## Conclusão
