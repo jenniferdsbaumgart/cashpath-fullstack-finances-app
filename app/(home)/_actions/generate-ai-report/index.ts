@@ -29,7 +29,7 @@ export const generateAiReport = async ({ month }: GenerateAiReportSchema) => {
     },
   });
   // send to chatgpt and as to generate the report with insights
-  const content = `Generate a report of my following finance transactions with insights and suggestions for improve my finance management. The transactions are divided by dot and comma. The structure of each transaction is {DATE}--{TYPE}--{VALUE}--{CATEGORY}. The transactions are: ${transactions.map((transaction) => `${transaction.date.toLocaleDateString("pt-BR")}--${transaction.type}--US$${transaction.amount}--${transaction.category}`).join(";")}`;
+  const content = `Generate a report of my following finance transactions with insights and suggestions for improve my finance management. The transactions are divided by dot and comma. The structure of each transaction is {DATE}--{TYPE}--{VALUE}--{CATEGORY}. The transactions are: ${transactions.map((transaction) => `${transaction.date.toLocaleDateString("pt-BR")}--${transaction.type}--US$${transaction.amount}--${transaction.category}`).join(";")}. Please do not include a table in the report.`;
   const response = await openAi.chat.completions.create({
     model: "gpt-4o-mini",
     messages: [
@@ -43,8 +43,6 @@ export const generateAiReport = async ({ month }: GenerateAiReportSchema) => {
         content,
       },
     ],
-    max_tokens: 1000,
-    temperature: 0.7,
   });
   // return the report
   return response.choices[0].message.content;
