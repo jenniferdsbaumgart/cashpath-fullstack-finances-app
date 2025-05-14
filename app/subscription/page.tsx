@@ -22,7 +22,7 @@ const SubscriptionPage = async () => {
         <h1 className="text-2xl font-bold">Subscription</h1>
 
         <div className="flex gap-6">
-          <Card className="w-[450px]">
+          <Card className="w-[450px] rounded-xl bg-[#0a0a0a] p-6 shadow-[inset_1px_1px_2px_rgba(255,255,255,0.05),_2px_2px_10px_rgba(0,0,0,0.4)]">
             <CardHeader className="border-b border-solid py-8">
               <h2 className="text-center text-2xl font-semibold">Basic Plan</h2>
               <div className="flex items-center justify-center gap-3">
@@ -45,7 +45,7 @@ const SubscriptionPage = async () => {
             </CardContent>
           </Card>
 
-          <Card className="w-[450px]">
+          <Card className="w-[450px] rounded-xl bg-[#0a0a0a] p-6 shadow-[inset_1px_1px_2px_rgba(255,255,255,0.05),_2px_2px_10px_rgba(0,0,0,0.4)]">
             <CardHeader className="relative border-b border-solid py-8">
               {hasPremiumPlan && (
                 <Badge className="absolute left-4 top-12 bg-teal-500/10 text-teal-500">

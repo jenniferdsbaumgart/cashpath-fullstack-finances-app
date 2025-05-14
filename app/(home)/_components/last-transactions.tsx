@@ -28,7 +28,7 @@ const LastTransactions = ({ lastTransactions }: LastTransactionsProps) => {
     return "-";
   };
   return (
-    <ScrollArea className="rounded-md border">
+    <ScrollArea className="rounded-xl border bg-[#0a0a0a] p-2 shadow-[inset_1px_1px_2px_rgba(255,255,255,0.05),_2px_2px_10px_rgba(0,0,0,0.4)]">
       <CardHeader className="flex-row items-center justify-between">
         <CardTitle className="font-bold">Last Transactions</CardTitle>
         <Button variant="outline" className="rounded-full font-bold" asChild>

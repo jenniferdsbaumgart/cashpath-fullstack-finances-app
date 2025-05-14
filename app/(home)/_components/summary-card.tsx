@@ -18,7 +18,7 @@ const SummaryCard = ({
   userCanAddTransaction,
 }: SummaryCardProps) => {
   return (
-    <Card>
+    <Card className="rounded-xl bg-[#0a0a0a] p-2 shadow-[inset_1px_1px_2px_rgba(255,255,255,0.05),_2px_2px_10px_rgba(0,0,0,0.4)]">
       <CardHeader className="flex-row items-center gap-4">
         {icon}
         <p
