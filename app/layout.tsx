@@ -13,6 +13,9 @@ export const metadata: Metadata = {
   title: "Monicount AI",
   description:
     "An AI-powered finance management application to help you track and optimize your expenses.",
+  icons: {
+    icon: "/favicon.pmg",
+  },
 };
 
 export default function RootLayout({
