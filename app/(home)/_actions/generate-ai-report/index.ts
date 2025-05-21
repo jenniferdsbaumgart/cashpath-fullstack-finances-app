@@ -3,6 +3,7 @@ import { db } from "@/app/_lib/prisma";
 import { auth, clerkClient } from "@clerk/nextjs/server";
 import OpenAI from "openai";
 import { GenerateAiReportSchema, generateAiReportSchema } from "./schema";
+import { formatCurrency } from "@/app/_utils/currency";
 
 export const generateAiReport = async ({ month }: GenerateAiReportSchema) => {
   generateAiReportSchema.parse({ month });
@@ -29,7 +30,7 @@ export const generateAiReport = async ({ month }: GenerateAiReportSchema) => {
     },
   });
   // send to chatgpt and as to generate the report with insights
-  const content = `Generate a report of my following finance transactions with insights and suggestions for improve my finance management. The transactions are divided by dot and comma. The structure of each transaction is {DATE}--{TYPE}--{VALUE}--{CATEGORY}. The transactions are: ${transactions.map((transaction) => `${transaction.date.toLocaleDateString("pt-BR")}--${transaction.type}--US$${transaction.amount}--${transaction.category}`).join(";")}. Please do not include a table in the report.`;
+  const content = `Generate a report of my following finance transactions with insights and suggestions for improve my finance management. The transactions are divided by dot and comma. The structure of each transaction is {DATE}--{TYPE}--{VALUE}--{CATEGORY}. The transactions are: ${transactions.map((transaction) => `${transaction.date.toLocaleDateString("en-US")}--${transaction.type}--${formatCurrency(Number(transaction.amount))}--${transaction.category}`).join(";")}. Please do not include a table in the report.`;
   const response = await openAi.chat.completions.create({
     model: "gpt-4o-mini",
     messages: [

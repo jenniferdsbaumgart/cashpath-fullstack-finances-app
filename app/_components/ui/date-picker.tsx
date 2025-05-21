@@ -24,13 +24,13 @@ export const DatePicker = ({ value, onChange }: DatePickerProps) => {
         >
           <CalendarIcon className="mr-2 h-4 w-4" />
           {value ? (
-            new Date(value).toLocaleDateString("pt-BR", {
+            new Date(value).toLocaleDateString("en-US", {
               day: "2-digit",
               month: "long",
               year: "numeric",
             })
           ) : (
-            <span>Selecione uma data...</span>
+            <span>Pick a date...</span>
           )}
         </Button>
       </PopoverTrigger>
