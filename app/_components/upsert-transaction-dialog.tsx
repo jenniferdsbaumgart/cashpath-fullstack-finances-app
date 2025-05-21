@@ -121,9 +121,9 @@ const UpsertTransactionDialog = ({
       <DialogContent>
         <DialogHeader>
           <DialogTitle>
-            {isUpdate ? "Atualizar" : "Criar"} transação
+            {isUpdate ? "Update" : "Create"} Transaction
           </DialogTitle>
-          <DialogDescription>Insira as informações abaixo</DialogDescription>
+          <DialogDescription>Fill in the details below</DialogDescription>
         </DialogHeader>
 
         <Form {...form}>
@@ -168,10 +168,7 @@ const UpsertTransactionDialog = ({
               render={({ field }) => (
                 <FormItem>
                   <FormLabel>Type</FormLabel>
-                  <Select
-                    onValueChange={field.onChange}
-                    value={field.value} // corrigido
-                  >
+                  <Select onValueChange={field.onChange} value={field.value}>
                     <FormControl>
                       <SelectTrigger>
                         <SelectValue placeholder="Select a verified email to display" />
@@ -195,10 +192,7 @@ const UpsertTransactionDialog = ({
               render={({ field }) => (
                 <FormItem>
                   <FormLabel>Category</FormLabel>
-                  <Select
-                    onValueChange={field.onChange}
-                    value={field.value} // corrigido
-                  >
+                  <Select onValueChange={field.onChange} value={field.value}>
                     <FormControl>
                       <SelectTrigger>
                         <SelectValue placeholder="Select a category..." />
