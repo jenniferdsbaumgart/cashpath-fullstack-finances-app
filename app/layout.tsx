@@ -14,7 +14,7 @@ export const metadata: Metadata = {
   description:
     "An AI-powered finance management application to help you track and optimize your expenses.",
   icons: {
-    icon: "/favicon.pmg",
+    icon: "/favicon.png",
   },
 };
 
