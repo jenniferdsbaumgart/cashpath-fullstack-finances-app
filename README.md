@@ -1,31 +1,28 @@
 # Monicount - Finances Application
-**Monicount** é uma aplicação web elegante e minimalista desenvolvida para ajudar você a gerenciar suas finanças com eficiência e clareza. Com uma interface moderna e intuitiva, Monicount oferece ferramentas para rastreamento financeiro, planejamento e visualização de gastos. Incluindo Relatórios gerados por IA com insights sobre suas finanças, no modo de assinatura Premium.
+**Monicount** is a sleek and minimalist web application designed to help you manage your finances efficiently and clearly. With a modern and intuitive interface, Monicount offers tools for financial tracking, planning and visualization of expenses. Including AI-generated reports with insights into your finances, in Premium subscription mode.
 
-# Status: Em desenvolvimento 🚧 
+## Technologies Used
 
-## Tecnologias Utilizadas
+- [Next.js](https://nextjs.org/) – React framework for modern web applications
+- [React](https://reactjs.org/) – Library for building user interfaces
+- [TypeScript](https://www.typescriptlang.org/) – Static typing for JavaScript
+- [Tailwind CSS](https://tailwindcss.com/) – Utility CSS framework for fast and responsive styling
+- [shadcn/ui](https://ui.shadcn.com/) – Accessible and customizable UI components
+- [Prisma](https://www.prisma.io/) – Database ORM
+- [Clerk](https://clerk.dev/) – Modern and secure authentication
+- [Stripe](https://stripe.com/) – Payment processing
+- [Zod](https://zod.dev/) – TypeScript-first schema validation
+- [React Hook Form](https://react-hook-form.com/) – Efficient form manipulation
+- [Recharts](https://recharts.org/) – Data visualization in charts
 
-- [Next.js](https://nextjs.org/) – Framework React para aplicações web modernas  
-- [React](https://reactjs.org/) – Biblioteca para construção de interfaces de usuário  
-- [TypeScript](https://www.typescriptlang.org/) – Tipagem estática para JavaScript  
-- [Tailwind CSS](https://tailwindcss.com/) – Framework CSS utilitário para estilização rápida e responsiva  
-- [shadcn/ui](https://ui.shadcn.com/) – Componentes UI acessíveis e customizáveis  
-- [Prisma](https://www.prisma.io/) – ORM para banco de dados  
-- [Clerk](https://clerk.dev/) – Autenticação moderna e segura  
-- [Stripe](https://stripe.com/) – Processamento de pagamentos  
-- [Zod](https://zod.dev/) – Validação de schemas TypeScript-first  
-- [React Hook Form](https://react-hook-form.com/) – Manipulação eficiente de formulários  
-- [Recharts](https://recharts.org/) – Visualização de dados em gráficos  
+## Screenshots
+![Monicount Dashboard](https://i.ibb.co/0VKWmXNX/1.png)
+![Monicount AI Report](https://i.ibb.co/FkNm990b/4.png)
+![Monicount Subscriptions](https://i.ibb.co/wF42FKbq/3.png)
+![Monicount Add Transaction](https://i.ibb.co/gbpKbZDX/2.png)
 
-## Próximos Passos
 
-- [x] Implementar dashboard interativo com gráficos e tabelas.
-- [x] Integração com chatGPT
-- [x] Adicionar planos de assinatura    
-- [ ] 🌐 Deploy e documentação completa da API.  
+## License
 
-## Conclusão
-
-O **Monicount** ainda está em construção e, assim como o projeto, estou em constante aprendizado.   
-Cada linha de código escrita é um aprendizado novo, e estou animada para ver até onde esse projeto pode chegar.  
+[MIT](https://choosealicense.com/licenses/mit/)
 
