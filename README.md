@@ -1,4 +1,4 @@
-# Monicount - Finances Application
+![Logo](https://i.ibb.co/mFrnPDjF/monicount-logo.png)
 **Monicount** is a sleek and minimalist web application designed to help you manage your finances efficiently and clearly. With a modern and intuitive interface, Monicount offers tools for financial tracking, planning and visualization of expenses. Including AI-generated reports with insights into your finances, in Premium subscription mode.
 
 ## Technologies Used
