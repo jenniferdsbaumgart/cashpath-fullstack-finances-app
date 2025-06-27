@@ -22,7 +22,6 @@
 ![Monicount Subscriptions](https://i.ibb.co/wF42FKbq/3.png)
 ![Monicount Add Transaction](https://i.ibb.co/gbpKbZDX/2.png)
 
-
 ## License
 
 [MIT](https://choosealicense.com/licenses/mit/)
